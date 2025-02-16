@@ -21,7 +21,7 @@ export const QuoteBoxSocials = () => {
     {
       socialLinks.map((link, index) => (
         <Link key={index} name={link.name} url={link.url}>
-          <Icon src={link.icon} alt={link.name} />
+          <Icon name={link.name} />
         </Link>
       ))
     }

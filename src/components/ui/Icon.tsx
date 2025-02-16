@@ -1,8 +1,7 @@
+import { useIcon } from "../../hooks/useIcon"
+
 type Props = {
-  src: string,
-  alt: string
+  name: string
 }
 
-export const Icon = (props: Props) => {
-  return <img className="icon" {...props} />
-}
+export const Icon = ({name}: Props) => useIcon(name.toLowerCase());
