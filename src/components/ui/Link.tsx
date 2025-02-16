@@ -7,7 +7,7 @@ type Props = {
   children: React.ReactNode
 }
 
-export const Link = ({ children, url, name }: React.PropsWithChildren<Props>) => {
+export const Link = ({ children, url, name }: Props) => {
   const { bgColor } = useBackgroundColor();
 
   return <a className="link" href={url} title={name} style={{backgroundColor: bgColor}}>{children}</a>

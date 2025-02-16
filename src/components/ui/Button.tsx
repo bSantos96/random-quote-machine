@@ -1,4 +1,4 @@
-import React, { PropsWithChildren } from "react"
+import React from "react"
 import { useBackgroundColor } from "../../hooks/useBacktgroundColorContext"
 
 type Props = {
@@ -6,7 +6,7 @@ type Props = {
   children: string
 }
 
-export const Button = ({ onClick, children }: PropsWithChildren<Props>) => {
+export const Button = ({ onClick, children }: Props) => {
   const { bgColor } = useBackgroundColor();
 
   return <button style={{ backgroundColor: bgColor }} type="button" onClick={onClick} className="button">{children}</button>
