@@ -57,10 +57,6 @@ body,
   gap: 10px;
 }
 
-.icon {
-  height: 20px;
-}
-
 .link {
   display: flex;
   justify-content: center;
@@ -68,6 +64,11 @@ body,
   padding: 10px;
   border-radius: 3px;
   background-color: rgb(231, 76, 60);
+}
+
+.link > svg {
+  width: 20px;
+  fill: white;
 }
 
 .button {
