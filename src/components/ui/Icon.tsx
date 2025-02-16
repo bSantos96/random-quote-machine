@@ -3,6 +3,6 @@ type Props = {
   alt: string
 }
 
-export default function Icon(props: Props) {
+export const Icon = (props: Props) => {
   return <img className="icon" {...props} />
 }

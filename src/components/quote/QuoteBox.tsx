@@ -1,6 +1,6 @@
 import { useBackgroundColor } from "../../hooks/useBacktgroundColorContext";
-import QuoteBoxSocials from "./QuoteBoxSocials";
-import Button from "../ui/Button";
+import { QuoteBoxSocials } from "./QuoteBoxSocials";
+import { Button } from "../ui/Button";
 
 const handleButtonClick = (setBgColor: (color: string) => void) => {
   const red = Math.floor(Math.random() * 256);
@@ -10,7 +10,7 @@ const handleButtonClick = (setBgColor: (color: string) => void) => {
   setBgColor(`rgb(${red}, ${green}, ${blue})`);
 }
 
-export default function QuoteBox() {
+export const QuoteBox = () => {
   const { setBgColor } = useBackgroundColor();
 
   return <div className="quote-box">

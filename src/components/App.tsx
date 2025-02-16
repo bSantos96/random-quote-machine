@@ -1,13 +1,13 @@
 import { useState } from "react";
-import QuoteBox from "./quote/QuoteBox";
+import { QuoteBox } from "./quote/QuoteBox";
 import { BackgroundColorContext } from "../contexts/BackgroundColorContext";
 
-export default function App() {
+export const App = () => {
   const [bgColor, setBgColor] = useState("");
 
   return (
     <BackgroundColorContext.Provider value={{ bgColor, setBgColor }}>
-      <div className="app" style={{backgroundColor: bgColor}}>
+      <div className="app" style={{ backgroundColor: bgColor }}>
         <QuoteBox />
       </div>
     </BackgroundColorContext.Provider>

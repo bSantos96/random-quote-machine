@@ -1,7 +1,7 @@
 import GithubIcon from '../../assets/icons/brands/github.png';
 import LinkedInIcon from '../../assets/icons/brands/linkedin.png';
-import Icon from '../ui/Icon';
-import Link from "../ui/Link";
+import { Icon } from '../ui/Icon';
+import { Link } from "../ui/Link";
 
 const socialLinks = [
   {
@@ -16,7 +16,7 @@ const socialLinks = [
   },
 ];
 
-export default function QuoteBoxSocials() {
+export const QuoteBoxSocials = () => {
   return <div className='quote-box-socials'>
     {
       socialLinks.map((link, index) => (

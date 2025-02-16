@@ -6,8 +6,8 @@ type Props = {
   children: string
 }
 
-export default function Button({onClick, children}: PropsWithChildren<Props>) {
-  const {bgColor} = useBackgroundColor();
+export const Button = ({ onClick, children }: PropsWithChildren<Props>) => {
+  const { bgColor } = useBackgroundColor();
 
-  return <button style={{backgroundColor: bgColor}} type="button" onClick={onClick} className="button">{children}</button>
+  return <button style={{ backgroundColor: bgColor }} type="button" onClick={onClick} className="button">{children}</button>
 }
