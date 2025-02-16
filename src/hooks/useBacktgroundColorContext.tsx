@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { BackgroundColorContext } from "../contexts/BackgroundColorContext";
 
-export function useBackgroundColor() {
+export const useBackgroundColor = () => {
   const context = useContext(BackgroundColorContext);
 
   if (context === undefined) {
